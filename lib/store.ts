@@ -14,6 +14,7 @@ import { Reminder, SEED, todayKey } from './types';
 export interface DispatchRecord {
   sent: boolean;
   taken: boolean;
+  reminded15?: boolean;
   takenBy?: string;       // nombre de quien la marcó (en Telegram)
   messages: Array<{ chatId: number; messageId: number }>;
 }
